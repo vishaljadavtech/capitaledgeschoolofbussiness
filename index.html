@@ -50,6 +50,8 @@
     referrerpolicy="no-referrer" />
   <!-- Swiper CSS for Testimonials Slider (ADDED) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
@@ -174,6 +176,11 @@
       right: 30px;
       z-index: 999;
     }
+
+    /* AOS smoothness */
+    [data-aos] {
+      will-change: transform, opacity;
+    }
   </style>
 
   <!-- Schema.org markup for Educational Institution -->
@@ -226,13 +233,13 @@
 </head>
 
 <body>
-  <header class="site-header" id="top">
+  <header class="site-header" id="top" data-aos="fade-down" data-aos-duration="1000">
     <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Capital Edge Home">
+      <a href="#top" class="brand" aria-label="Capital Edge Home" data-aos="fade-right" data-aos-delay="100">
         <img class="brand-mark" src="/assets/img/logo.png" alt="Capital Edge logo" />
       </a>
 
-      <nav class="site-nav" aria-label="Primary navigation">
+      <nav class="site-nav" aria-label="Primary navigation" data-aos="fade-left" data-aos-delay="200">
         <a href="#about">About</a>
         <a href="#journey">Learning Paths</a>
         <a href="#programs">Programs</a>
@@ -246,20 +253,20 @@
   <main>
     <section class="hero-section">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">
+        <div class="hero-copy" data-aos="fade-right" data-aos-duration="1200">
+          <div class="eyebrow" data-aos="fade-up" data-aos-delay="100">
             <i class="fa-solid fa-chart-line"></i>
             India's premier next-gen finance hub
           </div>
 
-          <h1>India's Next-Gen Finance &amp; Business Institution</h1>
-          <p class="hero-text">
+          <h1 data-aos="fade-up" data-aos-delay="200">India's Next-Gen Finance &amp; Business Institution</h1>
+          <p class="hero-text" data-aos="fade-up" data-aos-delay="300">
             We train traders, investors, and future business leaders to build real wealth through institutional
             strategies,
             real market exposure, and practical execution.
           </p>
 
-          <div class="hero-actions">
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
             <a href="#apply" class="btn btn-primary">
               <i class="fa-solid fa-arrow-right"></i>
               Apply Now
@@ -270,15 +277,15 @@
             </a>
           </div>
 
-          <div class="hero-pills">
+          <div class="hero-pills" data-aos="fade-up" data-aos-delay="500">
             <span><i class="fa-solid fa-users"></i> 1000+ Participants</span>
             <span><i class="fa-solid fa-building-columns"></i> Institutional Strategies</span>
             <span><i class="fa-solid fa-chalkboard-user"></i> Real Market Training</span>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Capital Edge visual presentation">
-          <div class="visual-card main-visual-card">
+        <div class="hero-visual" aria-label="Capital Edge visual presentation" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+          <div class="visual-card main-visual-card" data-aos="zoom-in-up" data-aos-delay="250">
             <div class="visual-topbar">
               <span></span><span></span><span></span>
             </div>
@@ -301,7 +308,7 @@
             </div>
           </div>
 
-          <div class="floating-card floating-card-top">
+          <div class="floating-card floating-card-top" data-aos="zoom-in" data-aos-delay="400">
             <i class="fa-solid fa-shield-halved"></i>
             <div>
               <strong>Risk-first approach</strong>
@@ -309,7 +316,7 @@
             </div>
           </div>
 
-          <div class="floating-card floating-card-bottom">
+          <div class="floating-card floating-card-bottom" data-aos="zoom-in" data-aos-delay="600">
             <i class="fa-solid fa-crown"></i>
             <div>
               <strong>Elite ecosystem</strong>
@@ -320,21 +327,21 @@
       </div>
     </section>
 
-    <section class="stats-strip">
+    <section class="stats-strip" data-aos="fade-up" data-aos-duration="1000">
       <div class="container stats-grid">
-        <article>
+        <article data-aos="fade-up" data-aos-delay="100">
           <strong>1000+</strong>
           <span>participants across learning tracks</span>
         </article>
-        <article>
+        <article data-aos="fade-up" data-aos-delay="200">
           <strong>4</strong>
           <span>structured pathways from foundation to elite</span>
         </article>
-        <article>
+        <article data-aos="fade-up" data-aos-delay="300">
           <strong>Live</strong>
           <span>market review, journaling, and execution drills</span>
         </article>
-        <article>
+        <article data-aos="fade-up" data-aos-delay="400">
           <strong>1 Goal</strong>
           <span>turn knowledge into wealth-building competence</span>
         </article>
@@ -343,30 +350,30 @@
 
     <section class="section section-dark" id="about">
       <div class="container split-layout">
-        <div>
-          <div class="section-tag">Why Capital Edge</div>
-          <h2>Built for real-world execution, not outdated theory</h2>
-          <p class="section-lead">
+        <div data-aos="fade-right" data-aos-duration="1200">
+          <div class="section-tag" data-aos="fade-up" data-aos-delay="100">Why Capital Edge</div>
+          <h2 data-aos="fade-up" data-aos-delay="200">Built for real-world execution, not outdated theory</h2>
+          <p class="section-lead" data-aos="fade-up" data-aos-delay="300">
             Capital Edge combines institutional frameworks, disciplined market thinking, and mentorship-led learning so
             students can operate with clarity in both finance and business environments.
           </p>
 
           <div class="feature-list">
-            <div class="feature-item">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
               <i class="fa-solid fa-chart-line"></i>
               <div>
                 <h3>Institutional Trading Lens</h3>
                 <p>SMC, ICT, order flow, and high-probability market structure frameworks.</p>
               </div>
             </div>
-            <div class="feature-item">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
               <i class="fa-solid fa-bullseye"></i>
               <div>
                 <h3>Execution-Focused Learning</h3>
                 <p>Trade planning, journaling, drills, and market simulations that sharpen decision-making.</p>
               </div>
             </div>
-            <div class="feature-item">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
               <i class="fa-solid fa-user-tie"></i>
               <div>
                 <h3>Mentorship by Practitioners</h3>
@@ -376,8 +383,8 @@
           </div>
         </div>
 
-        <div class="insight-panel">
-          <div class="panel-card tall-panel">
+        <div class="insight-panel" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+          <div class="panel-card tall-panel" data-aos="zoom-in-up" data-aos-delay="250">
             <div class="panel-badge">Capital Edge Method</div>
             <div class="abstract-finance-image image-one" role="img" aria-label="Abstract finance growth illustration">
             </div>
@@ -393,9 +400,9 @@
       </div>
     </section>
 
-    <section id="features-2" class="features-2 section">
+    <section id="features-2" class="features-2 section" data-aos="fade-up" data-aos-duration="1000">
 
-      <section class="hero-section">
+      <section class="hero-section" data-aos="zoom-in" data-aos-duration="1000">
         <h1>Trade Like <span>The Institutions</span></h1>
         <p>Get ready to level up your trading game.</p>
       </section>
@@ -437,9 +444,9 @@
 
     </section><!-- /Features 2 Section -->
 
-    <section id="mentor" class="mentor-about-section">
+    <section id="mentor" class="mentor-about-section" data-aos="fade-up" data-aos-duration="1000">
       <div class="container">
-        <div class="mentor-header text-center mb-5">
+        <div class="mentor-header text-center mb-5" data-aos="fade-down" data-aos-delay="100">
           <a href="#" class="meet-team-btn"><i style="margin-right: 5px;" class="fa-solid fa-user"></i> Meet the
             Mentor</a>
           <h1 class="display-4 fw-bold text-white">Our World Class Trading Mentors</h1>
@@ -448,10 +455,10 @@
         <div class="row justify-content-center">
           <!-- Mentor Card - Tom Vorwald Style -->
           <div class="col-12 d-flex justify-content-center">
-            <div class="mentor-card">
+            <div class="mentor-card" data-aos="zoom-in-up" data-aos-duration="1200">
               <div class="row g-0 align-items-center">
                 <div class="col-md-6">
-                  <div class="mentor-info">
+                  <div class="mentor-info" data-aos="fade-right" data-aos-delay="200">
                     <h3 class="mentor-name">Jaivik Rathod</h3>
                     <p class="mentor-title">The Strategic Mind & Personality Mentor</p>
                     <div class="mentor-bio">
@@ -476,7 +483,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="mentor-image-wrapper">
+                  <div class="mentor-image-wrapper" data-aos="fade-left" data-aos-delay="300">
                     <img src="assets/img/about/mentor.png" alt="Jaivik Rathod" class="mentor-image">
                   </div>
                 </div>
@@ -487,39 +494,39 @@
       </div>
     </section>
 
-    <section class="hero-trading1">
+    <section class="hero-trading1" data-aos="fade-up" data-aos-duration="1000">
 
       <div class="container">
         <div class="text-center">
 
           <!-- Mission badge -->
-          <div class="mission-badge">
+          <div class="mission-badge" data-aos="zoom-in" data-aos-delay="100">
             <i class="fa-solid fa-building-columns"></i>
             Our Educational Offer
           </div>
 
-          <h1>
+          <h1 data-aos="fade-up" data-aos-delay="200">
             The 5 Pillars of<br>
             Capital Edge
           </h1>
 
           <!-- Subtitle -->
-          <p class="subtitle">
+          <p class="subtitle" data-aos="fade-up" data-aos-delay="300">
             Education, live sessions, trading psychology, market analysis and live market action, all at Capital Edge
           </p>
         </div>
       </div>
     </section>
     <div>
-      <section class="learning-path">
+      <section class="learning-path" data-aos="fade-up" data-aos-duration="1000">
         <div class="path-progress" id="progressLine"></div>
 
-        <h2 class="text-center mb-5 display-4 fw-bold">
+        <h2 class="text-center mb-5 display-4 fw-bold" data-aos="fade-down">
           Here's your learning path with us,<br>in detail
         </h2>
 
         <!-- Step 1 -->
-        <div class="step" data-step="1">
+        <div class="step" data-step="1" data-aos="fade-right" data-aos-delay="100">
           <div class="step-content">
             <h3>01 Market Structure & Mechanics</h3>
             <p>Understand the foundational logic behind how markets actually operate — from auction principles to how
@@ -537,7 +544,7 @@
         </div>
 
         <!-- Step 2 -->
-        <div class="step" data-step="2">
+        <div class="step" data-step="2" data-aos="fade-left" data-aos-delay="150">
           <div class="step-content1">
             <h3>02 Volume Market Structure</h3>
             <p>Learn how volume builds market structure — and how professional traders use it to spot high-probability
@@ -555,7 +562,7 @@
         </div>
 
         <!-- Step 3 -->
-        <div class="step" data-step="3">
+        <div class="step" data-step="3" data-aos="fade-right" data-aos-delay="200">
           <div class="step-content">
             <h3>03 Time-Price Opportunity (TPO)</h3>
             <p>Master the logic of Market Profile and how time and price interaction reveals the intent behind every
@@ -574,7 +581,7 @@
         </div>
 
         <!-- Step 4 -->
-        <div class="step" data-step="4">
+        <div class="step" data-step="4" data-aos="fade-left" data-aos-delay="250">
           <div class="step-content1">
             <h3>04 Orderflow Dynamic Setups</h3>
             <p>See exactly where large players enter and exit using advanced order flow tools — and execute with
@@ -592,7 +599,7 @@
         </div>
 
         <!-- Step 5 -->
-        <div class="step" data-step="5">
+        <div class="step" data-step="5" data-aos="fade-right" data-aos-delay="300">
           <div class="step-content">
             <h3>05 Trade Management</h3>
             <p>Trading isn't just entry — it's about managing risk, decision-making, and performance with military-level
@@ -612,9 +619,9 @@
       </section>
 
 
-      <section class="section section-light" id="journey">
+      <section class="section section-light" id="journey" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
-          <div class="section-heading center">
+          <div class="section-heading center" data-aos="fade-down">
             <div class="section-tag">Learning Paths</div>
             <h2>Your Journey to Financial Excellence</h2>
             <p>
@@ -624,22 +631,22 @@
           </div>
 
           <div class="cards-grid cards-grid-four">
-            <article class="card-elevated">
+            <article class="card-elevated" data-aos="zoom-in" data-aos-delay="100">
               <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
               <h3>Foundation Programs</h3>
               <p>Build your base with market mechanics, trading fundamentals, and decision frameworks.</p>
             </article>
-            <article class="card-elevated">
+            <article class="card-elevated" data-aos="zoom-in" data-aos-delay="200">
               <div class="card-icon"><i class="fa-solid fa-chart-pie"></i></div>
               <h3>Advanced Programs</h3>
               <p>Master structure, execution logic, and system design with deeper technical understanding.</p>
             </article>
-            <article class="card-elevated">
+            <article class="card-elevated" data-aos="zoom-in" data-aos-delay="300">
               <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
               <h3>Professional Programs</h3>
               <p>Develop high-income skills in options, algo systems, and portfolio-level thinking.</p>
             </article>
-            <article class="card-elevated">
+            <article class="card-elevated" data-aos="zoom-in" data-aos-delay="400">
               <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
               <h3>Elite Programs</h3>
               <p>Unlock mentorship, live market reviews, and premium access designed for serious builders.</p>
@@ -648,37 +655,37 @@
         </div>
       </section>
 
-      <section class="section section-dark" id="programs">
+      <section class="section section-dark" id="programs" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
-          <div class="section-heading center">
+          <div class="section-heading center" data-aos="fade-down">
             <div class="section-tag">Flagship Curriculum</div>
             <h2>Programs engineered for high-performance market thinking</h2>
             <p>Cutting-edge curriculum curated by industry veterans and finance practitioners.</p>
           </div>
 
           <div class="program-grid">
-            <article class="program-card program-card-large">
+            <article class="program-card program-card-large" data-aos="flip-left" data-aos-delay="100">
               <div class="program-icon"><i class="fa-solid fa-landmark"></i></div>
               <h3>Foundation in Financial Markets</h3>
               <p>Equities, FX, derivatives, macroeconomic drivers, and market context for confident decision-making.</p>
               <a href="#contact">Discuss the track <i class="fa-solid fa-arrow-right"></i></a>
             </article>
 
-            <article class="program-card">
+            <article class="program-card" data-aos="flip-left" data-aos-delay="200">
               <div class="program-icon"><i class="fa-solid fa-robot"></i></div>
               <h3>Advanced Trading Systems</h3>
               <p>Quant-backed systems, automation thinking, execution models, and risk frameworks.</p>
               <a href="#contact">Learn more <i class="fa-solid fa-arrow-right"></i></a>
             </article>
 
-            <article class="program-card">
+            <article class="program-card" data-aos="flip-left" data-aos-delay="300">
               <div class="program-icon"><i class="fa-solid fa-wave-square"></i></div>
               <h3>Options &amp; Derivatives</h3>
               <p>Greeks, volatility, hedging logic, and structured positioning for precision trading.</p>
               <a href="#contact">Learn more <i class="fa-solid fa-arrow-right"></i></a>
             </article>
 
-            <article class="program-card">
+            <article class="program-card" data-aos="flip-left" data-aos-delay="400">
               <div class="program-icon"><i class="fa-solid fa-calculator"></i></div>
               <h3>Financial Modeling</h3>
               <p>DCF, LBO, M&amp;A, valuation strategy, and corporate finance decision frameworks.</p>
@@ -688,9 +695,9 @@
         </div>
       </section>
 
-      <section class="section section-light" id="testimonial-section">
+      <section class="section section-light" id="testimonial-section" data-aos="fade-up" data-aos-duration="1000">
         <div class="container success-layout" style="display: block;">
-          <div style="text-align: center; margin-bottom: 50px;">
+          <div style="text-align: center; margin-bottom: 50px;" data-aos="fade-down">
             <div class="section-tag">Success Stories</div>
             <h2>From beginners to confident traders</h2>
             <p class="section-lead" style="text-align: center;">
@@ -700,7 +707,7 @@
           </div>
 
           <!-- Testimonial Slider (ADDED) -->
-          <div class="swiper testimonial-swiper">
+          <div class="swiper testimonial-swiper" data-aos="zoom-in-up" data-aos-delay="200">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial-slide">
@@ -780,9 +787,9 @@
         </div>
       </section>
 
-      <section class="section elite-section" id="elite">
+      <section class="section elite-section" id="elite" data-aos="fade-up" data-aos-duration="1000">
         <div class="container elite-wrapper">
-          <div class="section-heading center light-text">
+          <div class="section-heading center light-text" data-aos="fade-down">
             <div class="section-tag">Capital Edge Elite</div>
             <h2>Premium access for serious wealth builders</h2>
             <p>
@@ -792,29 +799,29 @@
           </div>
 
           <div class="cards-grid cards-grid-four">
-            <article class="card-elevated card-elevated-dark">
+            <article class="card-elevated card-elevated-dark" data-aos="fade-up" data-aos-delay="100">
               <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
               <h3>Personal Mentorship</h3>
               <p>Weekly 1:1 guidance, review sessions, and actionable improvement loops.</p>
             </article>
-            <article class="card-elevated card-elevated-dark">
+            <article class="card-elevated card-elevated-dark" data-aos="fade-up" data-aos-delay="200">
               <div class="card-icon"><i class="fa-solid fa-tv"></i></div>
               <h3>Live Market Execution</h3>
               <p>Real-time trade reviews, journaling systems, and post-session market analysis.</p>
             </article>
-            <article class="card-elevated card-elevated-dark">
+            <article class="card-elevated card-elevated-dark" data-aos="fade-up" data-aos-delay="300">
               <div class="card-icon"><i class="fa-solid fa-arrows-to-eye"></i></div>
               <h3>Advanced Strategies</h3>
               <p>Smart money concepts, auction theory, and higher-order market interpretation.</p>
             </article>
-            <article class="card-elevated card-elevated-dark">
+            <article class="card-elevated card-elevated-dark" data-aos="fade-up" data-aos-delay="400">
               <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
               <h3>Limited Seats</h3>
               <p>An exclusive cohort for focused individuals pursuing long-term financial independence.</p>
             </article>
           </div>
 
-          <div class="center-cta" id="apply">
+          <div class="center-cta" id="apply" data-aos="zoom-in" data-aos-delay="500">
             <a href="#contact" class="btn btn-primary btn-large">
               <i class="fa-solid fa-crown"></i>
               Apply for Elite
@@ -823,14 +830,14 @@
         </div>
       </section>
 
-      <section class="section section-light founder-section">
-        <div class="container founder-card">
-          <div class="founder-visual">
+      <section class="section section-light founder-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container founder-card" data-aos="zoom-in-up">
+          <div class="founder-visual" data-aos="fade-right" data-aos-delay="100">
             <div class="founder-emblem">
               <i class="fa-solid fa-quote-right"></i>
             </div>
           </div>
-          <div class="founder-copy">
+          <div class="founder-copy" data-aos="fade-left" data-aos-delay="200">
             <div class="section-tag">Founder's Vision</div>
             <h2>We don't just teach trading. We build wealth creators.</h2>
             <p>
@@ -846,21 +853,21 @@
         </div>
       </section>
 
-      <section class="reason">
+      <section class="reason" data-aos="fade-up" data-aos-duration="1000">
         <div class="container1">
           <div class="text-center">
-            <div class="mission-badge">
+            <div class="mission-badge" data-aos="zoom-in" data-aos-delay="100">
               <i class="fa-solid fa-earth-africa"></i>
               Is this for you
             </div>
           </div>
-          <div class="header1">
+          <div class="header1" data-aos="fade-down">
             <h1>Who Should Join Capital Edge?</h1>
           </div>
 
           <div class="cards-wrapper">
             <!-- Beginners Card -->
-            <div class="edge-card">
+            <div class="edge-card" data-aos="fade-right" data-aos-delay="100">
               <div class="card-icon">
                 <i class="fas fa-user"></i>
               </div>
@@ -875,7 +882,7 @@
             </div>
 
             <!-- Intermediate & Advanced Card -->
-            <div class="edge-card">
+            <div class="edge-card" data-aos="fade-left" data-aos-delay="200">
               <div class="card-icon">
                 <i class="fas fa-chart-bar"></i>
               </div>
@@ -893,7 +900,7 @@
             </div>
           </div>
 
-          <div class="buttons">
+          <div class="buttons" data-aos="zoom-in" data-aos-delay="300">
             <a href="#" class="btn btn-primary">Get a FREE Workshop <i class="fas fa-arrow-right"></i></a>
             <a href="#" class="btn btn-dark">
               Free Strategy Call <i class="fas fa-arrow-right"></i>
@@ -902,7 +909,7 @@
         </div>
       </section>
 
-      <section id="faq" class="faq section">
+      <section id="faq" class="faq section" data-aos="fade-up" data-aos-duration="1000">
 
         <div class="container">
 
@@ -912,7 +919,7 @@
 
               <div class="faq-container">
 
-                <div class="faq-item faq-active">
+                <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="100">
                   <h3>Is Capital Edge SEBI registered?</h3>
                   <div class="faq-content">
                     <p>Capital Edge is an educational institution providing stock market knowledge and conceptual
@@ -924,7 +931,7 @@
                   <i class="faq-toggle bi bi-chevron-right"></i>
                 </div><!-- End Faq item-->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
                   <h3>Do you provide stock tips or trading calls?</h3>
                   <div class="faq-content">
                     <p>No, we do not provide stock tips, trading calls, or any buy/sell/hold recommendations. Our focus
@@ -935,7 +942,7 @@
                   <i class="faq-toggle bi bi-chevron-right"></i>
                 </div><!-- End Faq item-->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
                   <h3>Who should take this course?</h3>
                   <div class="faq-content">
                     <p>Our courses are designed for beginners and intermediate learners who want to understand stock
@@ -945,7 +952,7 @@
                   <i class="faq-toggle bi bi-chevron-right"></i>
                 </div><!-- End Faq item-->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
                   <h3>Can I expect profits after this course?</h3>
                   <div class="faq-content">
                     <p>Our courses are purely educational and aim to teach trading concepts. We do not guarantee profits
@@ -956,7 +963,7 @@
                   <i class="faq-toggle bi bi-chevron-right"></i>
                 </div><!-- End Faq item-->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                   <h3>What is the difference between education and investment advice?</h3>
                   <div class="faq-content">
                     <p>Education involves teaching general concepts, principles, and strategies about the stock market,
@@ -966,7 +973,7 @@
                   <i class="faq-toggle bi bi-chevron-right"></i>
                 </div><!-- End Faq item-->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
                   <h3>Do I need prior trading knowledge to join?</h3>
                   <div class="faq-content">
                     <p>No prior trading knowledge is required. Our courses are designed for beginners and include
@@ -975,7 +982,7 @@
                   <i class="faq-toggle bi bi-chevron-right"></i>
                 </div><!-- End Faq item-->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
                   <h3>How do I practice what I learn?</h3>
                   <div class="faq-content">
                     <p>We recommend practicing concepts using paper trading or demo accounts offered by SEBI-registered
@@ -985,7 +992,7 @@
                   <i class="faq-toggle bi bi-chevron-right"></i>
                 </div><!-- End Faq item-->
 
-                <div class="faq-item">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="450">
                   <h3>What is your refund policy?</h3>
                   <div class="faq-content">
                     <p>Please note that all course purchases are final and non-refundable. Since our courses provide
@@ -999,20 +1006,20 @@
               </div>
 
             </div><!-- End Faq Column-->
-            
+
 
           </div>
-          
+
         </div>
-        <section class="idea-section">
+        <section class="idea-section" data-aos="zoom-in-up" data-aos-duration="1000">
           <div class="container">
-            <div class="idea-box">
-              <div class="text-start text-white">
+            <div class="idea-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="text-start text-white" data-aos="fade-right" data-aos-delay="150">
                 <h2>Get Our Ideas</h2>
                 <p>Directly Into Your Inbox Everyday</p>
                 <a href="https://t.me/capital_edge" class="btn btn-light fw-bold">Join Us On Telegram</a>
               </div>
-              <div>
+              <div data-aos="fade-left" data-aos-delay="200">
                 <img src="assets/img/contact.png" alt="Mobile">
               </div>
             </div>
@@ -1020,11 +1027,11 @@
         </section>
 
       </section><!-- /Faq Section -->
-    
 
-      <section class="learn-section">
+
+      <section class="learn-section" data-aos="fade-up" data-aos-duration="1000">
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
-          <div class="learn-header">
+          <div class="learn-header" data-aos="fade-down">
             <a href="#" class="meet-team-btn">
               <i style="margin-right: 5px;" class="fas fa-bolt"></i>
               Your Trading Edge
@@ -1034,7 +1041,7 @@
 
           <div class="row" style="display: flex; flex-wrap: wrap; margin: -15px;">
             <!-- Card 1 -->
-            <div class="col-md-4" style="padding: 15px;">
+            <div class="col-md-4" style="padding: 15px;" data-aos="zoom-in" data-aos-delay="100">
               <div class="learn-card">
                 <div class="learn-card-icon"><i class="fas fa-list-ul"></i></div>
                 <h3>A Trading Methodology</h3>
@@ -1043,7 +1050,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="col-md-4" style="padding: 15px;">
+            <div class="col-md-4" style="padding: 15px;" data-aos="zoom-in" data-aos-delay="200">
               <div class="learn-card">
                 <div class="learn-card-icon"><i class="fas fa-chart-line"></i></div>
                 <h3>Trade Like Professionals</h3>
@@ -1052,7 +1059,7 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="col-md-4" style="padding: 15px;">
+            <div class="col-md-4" style="padding: 15px;" data-aos="zoom-in" data-aos-delay="300">
               <div class="learn-card">
                 <div class="learn-card-icon"><i class="fas fa-check-square"></i></div>
                 <h3>Verified Traders only</h3>
@@ -1061,7 +1068,7 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="col-md-4" style="padding: 15px;">
+            <div class="col-md-4" style="padding: 15px;" data-aos="zoom-in" data-aos-delay="400">
               <div class="learn-card">
                 <div class="learn-card-icon"><i class="fas fa-shield-alt"></i></div>
                 <h3>Transparency</h3>
@@ -1070,7 +1077,7 @@
             </div>
 
             <!-- Card 5 -->
-            <div class="col-md-4" style="padding: 15px;">
+            <div class="col-md-4" style="padding: 15px;" data-aos="zoom-in" data-aos-delay="500">
               <div class="learn-card">
                 <div class="learn-card-icon"><i class="fas fa-trophy"></i></div>
                 <h3>Clear Blueprints</h3>
@@ -1079,7 +1086,7 @@
             </div>
 
             <!-- Card 6 -->
-            <div class="col-md-4" style="padding: 15px;">
+            <div class="col-md-4" style="padding: 15px;" data-aos="zoom-in" data-aos-delay="600">
               <div class="learn-card">
                 <div class="learn-card-icon"><i class="fas fa-comments"></i></div>
                 <h3>Interact Live</h3>
@@ -1089,18 +1096,18 @@
           </div>
         </div>
 
-        <section class="trader-banner">
+        <section class="trader-banner" data-aos="fade-up" data-aos-duration="1200">
           <div class="banner-content">
 
-            <div class="banner-tag"><i style="margin-right: 5px;" class="fa-solid fa-bullseye"></i>Our Goal With You at
+            <div class="banner-tag" data-aos="zoom-in" data-aos-delay="100"><i style="margin-right: 5px;" class="fa-solid fa-bullseye"></i>Our Goal With You at
               Capital Edge</div>
 
-            <h1 class="banner-title">
+            <h1 class="banner-title" data-aos="fade-up" data-aos-delay="200">
               Become a <span class="highlight">knowledgeable and disciplined</span> market participant within<br>your
               first year.
             </h1>
 
-            <div class="banner-cta">
+            <div class="banner-cta" data-aos="fade-up" data-aos-delay="300">
               <a href="#" class="btn-main">Get a FREE Workshop <i class="fas fa-arrow-right"></i></a>
               <a href="#" class="btn-outline">Free Strategy Call <i class="fas fa-arrow-right"></i></a>
             </div>
@@ -1109,9 +1116,9 @@
         </section>
       </section>
 
-      <section class="section section-dark" id="contact">
+      <section class="section section-dark" id="contact" data-aos="fade-up" data-aos-duration="1000">
         <div class="container contact-grid">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1200">
             <div class="section-tag">Book a Strategy Call</div>
             <h2>Build your personal wealth roadmap</h2>
             <p class="section-lead">
@@ -1125,10 +1132,10 @@
               <div><i class="fa-solid fa-calendar-check"></i> Limited slots every week</div>
             </div>
           </div>
-          <a href="https://wa.me/917486068173" target="_blank" class="whatsapp-float">
+          <a href="https://wa.me/917486068173" target="_blank" class="whatsapp-float" data-aos="zoom-in" data-aos-delay="400">
             <i class="fa-brands fa-whatsapp"></i> </a>
 
-          <div class="form-shell">
+          <div class="form-shell" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
             <form class="lead-form" id="leadForm" action="#" method="post">
               <div class="input-group">
                 <label for="name">Full Name</label>
@@ -1152,16 +1159,16 @@
         </div>
       </section><br><br>
 
-      <section class="final-cta">
+      <section class="final-cta" data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="container final-cta-card">
-          <div>
+          <div data-aos="fade-right" data-aos-delay="100">
             <div class="section-tag">Start Today</div>
             <h2>Take the definitive step toward financial independence</h2>
             <p>
               Join a performance-driven institution built around execution, clarity, and wealth creation.
             </p>
           </div>
-          <div class="hero-actions final-actions">
+          <div class="hero-actions final-actions" data-aos="fade-left" data-aos-delay="200">
             <a href="#apply" class="btn btn-primary">
               <i class="fa-solid fa-arrow-right"></i>
               Apply Now
@@ -1175,9 +1182,9 @@
       </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" data-aos="fade-up" data-aos-duration="1000">
     <div class="container footer-grid">
-      <div>
+      <div data-aos="fade-up" data-aos-delay="100">
         <a href="#top" class="brand footer-brand">
           <img class="brand-mark" src="/assets/img/logo.png" alt="Capital Edge logo" />
         </a>
@@ -1186,7 +1193,7 @@
         </p>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="200">
         <h3>Quick Links</h3>
         <div class="footer-links">
           <a href="#about">About</a>
@@ -1197,7 +1204,7 @@
         </div>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="300">
         <h3>Connect</h3>
         <div class="social-links">
           <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -1208,7 +1215,7 @@
       </div>
     </div>
 
-    <div class="container footer-bottom">
+    <div class="container footer-bottom" data-aos="fade-up" data-aos-delay="400">
       <p>© 2026 Capital Edge School of Business. All Rights Reserved.</p>
     </div>
   </footer>
@@ -1362,6 +1369,19 @@
       spaceBetween: 20,
     });
   </script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 500,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+      offset: 80
+    });
+  </script>
+
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
     integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
     data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
