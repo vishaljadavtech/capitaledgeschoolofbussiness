@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A0E1A" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Capital Edge School of Business | Institutional Trading & Wealth Education India</title>
+  <meta name="title" content="Capital Edge School of Business | Institutional Trading & Wealth Education India" />
+  <meta name="description"
+    content="India's premier next-gen finance institution: Learn Orderflow, Market Profile, SMC, and professional trading strategies. NISM-certified mentors. SEBI-compliant educational programs for traders & investors." />
+  <meta name="keywords"
+    content="trading education India, stock market course, orderflow training, market profile, smart money concepts, NISM certified, financial learning, wealth creation, institutional trading, capital edge" />
+  <meta name="author" content="Capital Edge School of Business" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://capitaledge.in/" />
+  <meta property="og:title" content="Capital Edge School of Business | Institutional Trading & Wealth Education" />
+  <meta property="og:description"
+    content="Learn professional trading with Orderflow, Market Profile, and institutional strategies. NISM-certified mentorship. Real market exposure." />
+  <meta property="og:image" content="https://capitaledge.in/assets/img/og-image.jpg" />
+  <meta property="og:site_name" content="Capital Edge School of Business" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Capital Edge School of Business | Next-Gen Finance Education" />
+  <meta name="twitter:description"
+    content="Institutional-grade trading education. Orderflow, Market Profile, SMC, and wealth creation frameworks." />
+  <meta name="twitter:image" content="https://capitaledge.in/assets/img/twitter-card.jpg" />
+
+  <!-- Additional SEO & Verification -->
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="Mumbai" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://capitaledge.in/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    referrerpolicy="no-referrer" />
+  <!-- Swiper CSS for Testimonials Slider (ADDED) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <!-- ADDED: Slider and FAQ Styles -->
+  <style>
+    /* Testimonial Slider Styles */
+    .testimonial-swiper {
+      width: 100%;
+      padding: 20px 0 50px;
+    }
+
+    .testimonial-slide {
+      background: rgba(10, 14, 26, 0.95);
+      border-radius: 20px;
+      padding: 30px;
+      margin: 15px;
+      border: 1px solid rgba(201, 160, 61, 0.3);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial-slide:hover {
+      transform: translateY(-5px);
+      border-color: rgba(201, 160, 61, 0.6);
+    }
+
+    .testimonial-slide i.fa-quote-left {
+      font-size: 2rem;
+      color: #c9a03d;
+      opacity: 0.6;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .testimonial-slide p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #e0e0e0;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 20px;
+    }
+
+    .testimonial-author img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #c9a03d;
+    }
+
+    .testimonial-author strong {
+      display: block;
+      color: #c9a03d;
+      font-size: 1rem;
+    }
+
+    .testimonial-author span {
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #c9a03d;
+      background: rgba(0, 0, 0, 0.5);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 1rem;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #c9a03d;
+    }
+
+    .swiper-pagination-bullet {
+      background: #fff;
+    }
+
+    /* FAQ Styles - Making them functional */
+    .faq-item {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .faq-content {
+      display: none;
+      padding: 15px 0 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 10px;
+    }
+
+    .faq-item.faq-active .faq-content {
+      display: block;
+    }
+
+    .faq-item.faq-active .faq-toggle {
+      transform: rotate(90deg);
+    }
+
+    .faq-toggle {
+      transition: transform 0.3s ease;
+    }
+
+    /* Fixed WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+    }
+  </style>
+
+  <!-- Schema.org markup for Educational Institution -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Capital Edge School of Business",
+    "alternateName": "Capital Edge",
+    "url": "https://capitaledge.in/",
+    "logo": "https://capitaledge.in/assets/img/logo.png",
+    "description": "India's next-gen institution offering institutional-grade trading education, financial market training, and wealth creation programs with NISM-certified mentorship.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mumbai",
+      "addressRegion": "MH",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "telephone": "+91-7486068173",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/capital-edge",
+      "https://twitter.com/capital_edge",
+      "https://www.instagram.com/capitaledge",
+      "https://t.me/capital_edge"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Trading and Finance Programs",
+      "itemListElement": [
+        {
+          "@type": "Course",
+          "name": "Foundation in Financial Markets",
+          "description": "Equities, FX, derivatives, macroeconomic drivers, and market context for confident decision-making.",
+          "educationalCredentialAwarded": "Certificate of Completion"
+        },
+        {
+          "@type": "Course",
+          "name": "Advanced Trading Systems",
+          "description": "Quant-backed systems, automation thinking, execution models, and risk frameworks."
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Capital Edge Home">
+        <img class="brand-mark" src="/assets/img/logo.png" alt="Capital Edge logo" />
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#journey">Learning Paths</a>
+        <a href="#programs">Programs</a>
+        <a href="#elite">Elite</a>
+        <a href="#testimonial-section">Success Stories</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <i class="fa-solid fa-chart-line"></i>
+            India's premier next-gen finance hub
+          </div>
+
+          <h1>India's Next-Gen Finance &amp; Business Institution</h1>
+          <p class="hero-text">
+            We train traders, investors, and future business leaders to build real wealth through institutional
+            strategies,
+            real market exposure, and practical execution.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#apply" class="btn btn-primary">
+              <i class="fa-solid fa-arrow-right"></i>
+              Apply Now
+            </a>
+            <a href="#programs" class="btn btn-outline">
+              <i class="fa-solid fa-layer-group"></i>
+              Explore Programs
+            </a>
+          </div>
+
+          <div class="hero-pills">
+            <span><i class="fa-solid fa-users"></i> 1000+ Participants</span>
+            <span><i class="fa-solid fa-building-columns"></i> Institutional Strategies</span>
+            <span><i class="fa-solid fa-chalkboard-user"></i> Real Market Training</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Capital Edge visual presentation">
+          <div class="visual-card main-visual-card">
+            <div class="visual-topbar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="dashboard-illustration">
+              <div class="dashboard-chart"></div>
+              <div class="dashboard-side-stats">
+                <div class="mini-stat">
+                  <small>Performance</small>
+                  <strong>+32.8%</strong>
+                </div>
+                <div class="mini-stat">
+                  <small>Risk Model</small>
+                  <strong>Low Drawdown</strong>
+                </div>
+                <div class="mini-stat">
+                  <small>Mentorship</small>
+                  <strong>1:1 + Live Rooms</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-top">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>Risk-first approach</strong>
+              <p>Execution, journaling, and capital preservation.</p>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-bottom">
+            <i class="fa-solid fa-crown"></i>
+            <div>
+              <strong>Elite ecosystem</strong>
+              <p>Advanced mentorship for serious wealth builders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <article>
+          <strong>1000+</strong>
+          <span>participants across learning tracks</span>
+        </article>
+        <article>
+          <strong>4</strong>
+          <span>structured pathways from foundation to elite</span>
+        </article>
+        <article>
+          <strong>Live</strong>
+          <span>market review, journaling, and execution drills</span>
+        </article>
+        <article>
+          <strong>1 Goal</strong>
+          <span>turn knowledge into wealth-building competence</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="about">
+      <div class="container split-layout">
+        <div>
+          <div class="section-tag">Why Capital Edge</div>
+          <h2>Built for real-world execution, not outdated theory</h2>
+          <p class="section-lead">
+            Capital Edge combines institutional frameworks, disciplined market thinking, and mentorship-led learning so
+            students can operate with clarity in both finance and business environments.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <i class="fa-solid fa-chart-line"></i>
+              <div>
+                <h3>Institutional Trading Lens</h3>
+                <p>SMC, ICT, order flow, and high-probability market structure frameworks.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-bullseye"></i>
+              <div>
+                <h3>Execution-Focused Learning</h3>
+                <p>Trade planning, journaling, drills, and market simulations that sharpen decision-making.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <div>
+                <h3>Mentorship by Practitioners</h3>
+                <p>Direct guidance from professionals with strong practical market exposure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="insight-panel">
+          <div class="panel-card tall-panel">
+            <div class="panel-badge">Capital Edge Method</div>
+            <div class="abstract-finance-image image-one" role="img" aria-label="Abstract finance growth illustration">
+            </div>
+            <div class="panel-content">
+              <h3>Wealth Creation Focus</h3>
+              <p>
+                From risk management to portfolio thinking, students learn how to protect capital and compound with
+                discipline from day one.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features-2" class="features-2 section">
+
+      <section class="hero-section">
+        <h1>Trade Like <span>The Institutions</span></h1>
+        <p>Get ready to level up your trading game.</p>
+      </section>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="feature-card highlighted">
+
+              <div class="feature-image">
+                <img src="assets/img/trading/chart1.png" alt="Capital Edge online lessons" class="img-fluid"
+                  loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card highlighted">
+
+              <div class="feature-image">
+                <img src="assets/img/trading/chart3.png" alt="Trading strategies visuals" class="img-fluid"
+                  loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
+            <div class="feature-card highlighted">
+
+              <div class="feature-image">
+                <img src="assets/img/trading/chart2.png" alt="Educational support" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Features 2 Section -->
+
+    <section id="mentor" class="mentor-about-section">
+      <div class="container">
+        <div class="mentor-header text-center mb-5">
+          <a href="#" class="meet-team-btn"><i style="margin-right: 5px;" class="fa-solid fa-user"></i> Meet the
+            Mentor</a>
+          <h1 class="display-4 fw-bold text-white">Our World Class Trading Mentors</h1>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Mentor Card - Tom Vorwald Style -->
+          <div class="col-12 d-flex justify-content-center">
+            <div class="mentor-card">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-6">
+                  <div class="mentor-info">
+                    <h3 class="mentor-name">Jaivik Rathod</h3>
+                    <p class="mentor-title">The Strategic Mind & Personality Mentor</p>
+                    <div class="mentor-bio">
+                      <p>
+                        Jaivik is the mind behind the Capital Edge methodology — a refined, educational-grade
+                        approach built for traders who want clarity, depth, and precision in their market decisions.
+                        With
+                        years of focused study across advanced finance subjects and an official NISM certification, he
+                        understands that long-term trading success only happens when logic, structure, and discipline
+                        are
+                        fully aligned.</p>
+                      <p>With 5+ years of experience in market education, Jaivik has specialised in the areas that truly
+                        define
+                        professional trading education: Orderflow, Market Profile (TPO), Auction Market Theory,
+                        Liquidity Mapping,
+                        and institutional market structure.</p>
+                      <p>He believes that traders don't need more indicators —
+                        they need better understanding.
+                        And that's exactly what he delivers.</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mentor-image-wrapper">
+                    <img src="assets/img/about/mentor.png" alt="Jaivik Rathod" class="mentor-image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-trading1">
+
+      <div class="container">
+        <div class="text-center">
+
+          <!-- Mission badge -->
+          <div class="mission-badge">
+            <i class="fa-solid fa-building-columns"></i>
+            Our Educational Offer
+          </div>
+
+          <h1>
+            The 5 Pillars of<br>
+            Capital Edge
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="subtitle">
+            Education, live sessions, trading psychology, market analysis and live market action, all at Capital Edge
+          </p>
+        </div>
+      </div>
+    </section>
+    <div>
+      <section class="learning-path">
+        <div class="path-progress" id="progressLine"></div>
+
+        <h2 class="text-center mb-5 display-4 fw-bold">
+          Here's your learning path with us,<br>in detail
+        </h2>
+
+        <!-- Step 1 -->
+        <div class="step" data-step="1">
+          <div class="step-content">
+            <h3>01 Market Structure & Mechanics</h3>
+            <p>Understand the foundational logic behind how markets actually operate — from auction principles to how
+              liquidity is created, matched, and moved.</p>
+            <ul>
+              <li>Discover the Liquidity Auction and its effect on price movement</li>
+              <li>Understand Matching Algorithms and how trades are filled</li>
+              <li>Master the AMT Model and the role of Lead Market Makers</li>
+            </ul>
+          </div>
+          <div class="step-number">01</div>
+          <div class="step-image">
+            <img src="./assets/img/features/img1.webp" alt="Market Structure">
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step" data-step="2">
+          <div class="step-content1">
+            <h3>02 Volume Market Structure</h3>
+            <p>Learn how volume builds market structure — and how professional traders use it to spot high-probability
+              setups in both the short and long term.</p>
+            <ul>
+              <li>Identify Business Zones, Trends, and Long-Term Profiles</li>
+              <li>Use Volume Profile to execute day trading setups with precision</li>
+              <li>Master 4 Opening Types: In Value, Out of Value, Break-ins, and Continuations</li>
+            </ul>
+          </div>
+          <div class="step-number">02</div>
+          <div class="step-image">
+            <img src="./assets/img/features/img2.webp" alt="Volume Structure">
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step" data-step="3">
+          <div class="step-content">
+            <h3>03 Time-Price Opportunity (TPO)</h3>
+            <p>Master the logic of Market Profile and how time and price interaction reveals the intent behind every
+              session.</p>
+            <ul>
+              <li>Break down key Market Profile elements and structure</li>
+              <li>Identify Value Areas, Points of Control (POC), and Range Extensions to uncover high‑probability trade
+                locations</li>
+              <li>Build real-time execution context using session symmetry and imbalance</li>
+            </ul>
+          </div>
+          <div class="step-number">03</div>
+          <div class="step-image">
+            <img src="./assets/img/features/img3.webp" alt="TPO">
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step" data-step="4">
+          <div class="step-content1">
+            <h3>04 Orderflow Dynamic Setups</h3>
+            <p>See exactly where large players enter and exit using advanced order flow tools — and execute with
+              professional precision.</p>
+            <ul>
+              <li>Basics of the Footprint Charts</li>
+              <li>Learn the main orderflow patterns</li>
+              <li>Adapt it in your strategy</li>
+            </ul>
+          </div>
+          <div class="step-number">04</div>
+          <div class="step-image">
+            <img src="./assets/img/features/img4.webp" alt="Orderflow">
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step" data-step="5">
+          <div class="step-content">
+            <h3>05 Trade Management</h3>
+            <p>Trading isn't just entry — it's about managing risk, decision-making, and performance with military-level
+              precision.</p>
+            <ul>
+              <li>Track edge metrics: WR, RR, DD, PF, MAE, MFE</li>
+              <li>Use a Setup Leaderboard to improve consistency</li>
+              <li>Learn to adapt in real-time to shifting market conditions</li>
+            </ul>
+          </div>
+          <div class="step-number">05</div>
+          <div class="step-image">
+            <img src="./assets/img/features/img5.webp" alt="Trade Management">
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="section section-light" id="journey">
+        <div class="container">
+          <div class="section-heading center">
+            <div class="section-tag">Learning Paths</div>
+            <h2>Your Journey to Financial Excellence</h2>
+            <p>
+              Structured learning paths designed to move you from foundational confidence to professional-level
+              execution.
+            </p>
+          </div>
+
+          <div class="cards-grid cards-grid-four">
+            <article class="card-elevated">
+              <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h3>Foundation Programs</h3>
+              <p>Build your base with market mechanics, trading fundamentals, and decision frameworks.</p>
+            </article>
+            <article class="card-elevated">
+              <div class="card-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <h3>Advanced Programs</h3>
+              <p>Master structure, execution logic, and system design with deeper technical understanding.</p>
+            </article>
+            <article class="card-elevated">
+              <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h3>Professional Programs</h3>
+              <p>Develop high-income skills in options, algo systems, and portfolio-level thinking.</p>
+            </article>
+            <article class="card-elevated">
+              <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
+              <h3>Elite Programs</h3>
+              <p>Unlock mentorship, live market reviews, and premium access designed for serious builders.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="programs">
+        <div class="container">
+          <div class="section-heading center">
+            <div class="section-tag">Flagship Curriculum</div>
+            <h2>Programs engineered for high-performance market thinking</h2>
+            <p>Cutting-edge curriculum curated by industry veterans and finance practitioners.</p>
+          </div>
+
+          <div class="program-grid">
+            <article class="program-card program-card-large">
+              <div class="program-icon"><i class="fa-solid fa-landmark"></i></div>
+              <h3>Foundation in Financial Markets</h3>
+              <p>Equities, FX, derivatives, macroeconomic drivers, and market context for confident decision-making.</p>
+              <a href="#contact">Discuss the track <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+            <article class="program-card">
+              <div class="program-icon"><i class="fa-solid fa-robot"></i></div>
+              <h3>Advanced Trading Systems</h3>
+              <p>Quant-backed systems, automation thinking, execution models, and risk frameworks.</p>
+              <a href="#contact">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+            <article class="program-card">
+              <div class="program-icon"><i class="fa-solid fa-wave-square"></i></div>
+              <h3>Options &amp; Derivatives</h3>
+              <p>Greeks, volatility, hedging logic, and structured positioning for precision trading.</p>
+              <a href="#contact">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+            <article class="program-card">
+              <div class="program-icon"><i class="fa-solid fa-calculator"></i></div>
+              <h3>Financial Modeling</h3>
+              <p>DCF, LBO, M&amp;A, valuation strategy, and corporate finance decision frameworks.</p>
+              <a href="#contact">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- REPLACED: Success Stories Section with Testimonial Slider -->
+      <section class="section section-light" id="testimonial-section">
+        <div class="container success-layout" style="display: block;">
+          <div style="text-align: center; margin-bottom: 50px;">
+            <div class="section-tag">Success Stories</div>
+            <h2>From beginners to confident traders</h2>
+            <p class="section-lead">
+              Structured execution, strong mentorship, and disciplined market habits create measurable growth in both
+              confidence and consistency.
+            </p>
+          </div>
+
+          <!-- Testimonial Slider (ADDED) -->
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>"Capital Edge's institutional approach changed my entire perspective. Within six months, my trading
+                    consistency skyrocketed. The mentorship is unparalleled."</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohan Mehta">
+                    <div>
+                      <strong>Rohan Mehta</strong>
+                      <span>Elite Graduate | 142% strategy improvement</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>"I was struggling with consistency for 2 years. After joining Capital Edge, I finally understood
+                    market structure. Now I'm profitable 4 out of 5 weeks."</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Sharma">
+                    <div>
+                      <strong>Priya Sharma</strong>
+                      <span>Advanced Program Graduate</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>"The live market sessions and journaling drills transformed my risk management. I've finally found
+                    a trading community that cares about real growth."</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Kunal Verma">
+                    <div>
+                      <strong>Kunal Verma</strong>
+                      <span>Professional Program</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>"The depth of Orderflow and Market Profile training is unmatched. Capital Edge doesn't just teach
+                    strategies—they build professional traders."</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Neha Gupta">
+                    <div>
+                      <strong>Neha Gupta</strong>
+                      <span>Elite Cohort Member</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>"From losing money every month to consistent gains—Jaivik's mentorship changed everything. The
+                    institutional framework actually works!"</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Amit Patel">
+                    <div>
+                      <strong>Amit Patel</strong>
+                      <span>Foundation to Elite Graduate</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section elite-section" id="elite">
+        <div class="container elite-wrapper">
+          <div class="section-heading center light-text">
+            <div class="section-tag">Capital Edge Elite</div>
+            <h2>Premium access for serious wealth builders</h2>
+            <p>
+              A high-performance ecosystem for individuals committed to building wealth through trading, investing, and
+              business. Limited seats. Higher accountability. Stronger outcomes.
+            </p>
+          </div>
+
+          <div class="cards-grid cards-grid-four">
+            <article class="card-elevated card-elevated-dark">
+              <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+              <h3>Personal Mentorship</h3>
+              <p>Weekly 1:1 guidance, review sessions, and actionable improvement loops.</p>
+            </article>
+            <article class="card-elevated card-elevated-dark">
+              <div class="card-icon"><i class="fa-solid fa-tv"></i></div>
+              <h3>Live Market Execution</h3>
+              <p>Real-time trade reviews, journaling systems, and post-session market analysis.</p>
+            </article>
+            <article class="card-elevated card-elevated-dark">
+              <div class="card-icon"><i class="fa-solid fa-arrows-to-eye"></i></div>
+              <h3>Advanced Strategies</h3>
+              <p>Smart money concepts, auction theory, and higher-order market interpretation.</p>
+            </article>
+            <article class="card-elevated card-elevated-dark">
+              <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
+              <h3>Limited Seats</h3>
+              <p>An exclusive cohort for focused individuals pursuing long-term financial independence.</p>
+            </article>
+          </div>
+
+          <div class="center-cta" id="apply">
+            <a href="#contact" class="btn btn-primary btn-large">
+              <i class="fa-solid fa-crown"></i>
+              Apply for Elite
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light founder-section">
+        <div class="container founder-card">
+          <div class="founder-visual">
+            <div class="founder-emblem">
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+          </div>
+          <div class="founder-copy">
+            <div class="section-tag">Founder's Vision</div>
+            <h2>We don't just teach trading. We build wealth creators.</h2>
+            <p>
+              Capital Edge was built with one mission — to transform individuals into financially independent thinkers.
+              Every program is designed to sharpen judgment, improve execution, and cultivate a long-term wealth
+              mindset.
+            </p>
+            <div class="founder-signoff">
+              <strong>Jaivik Rathod</strong>
+              <span>Founder &amp; CIO</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reason">
+        <div class="container1">
+          <div class="text-center">
+            <div class="mission-badge">
+              <i class="fa-solid fa-earth-africa"></i>
+              Is this for you
+            </div>
+          </div>
+          <div class="header1">
+            <h1>Who Should Join Capital Edge?</h1>
+          </div>
+
+          <div class="cards-wrapper">
+            <!-- Beginners Card -->
+            <div class="edge-card">
+              <div class="card-icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <h3>Beginners</h3>
+              <ul>
+                <li>New to trading? Avoid fake promises and random tips.</li>
+                <li>Learn how financial markets work and build institutional-grade strategies: Orderflow, Market
+                  Profile,
+                  Volume Profile, SMC, Liquidity Concepts.</li>
+                <li>Learn directly from NISM-certified professionals using real market logic.</li>
+              </ul>
+            </div>
+
+            <!-- Intermediate & Advanced Card -->
+            <div class="edge-card">
+              <div class="card-icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <h3>Intermediate & Advanced Traders</h3>
+              <ul>
+                <li>Already trading but not consistently profitable? Level up with NISM-certified mentors with 5+ years
+                  live
+                  market experience.</li>
+                <li>Master institutional-level systems: Orderflow analysis, Market Profile, Volume Profile,
+                  multi-timeframe
+                  SMC logic, liquidity mapping, execution models, risk management.</li>
+                <li>Stop jumping from course to course—gain a tested, verified edge that works across indices, forex,
+                  crypto, and commodities.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <a href="#" class="btn btn-primary">Get a FREE Workshop <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="btn btn-dark">
+              Free Strategy Call <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section">
+
+        <div class="container">
+
+          <div class="row justify-content-center">
+
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="faq-container">
+
+                <div class="faq-item faq-active">
+                  <h3>Is Capital Edge SEBI registered?</h3>
+                  <div class="faq-content">
+                    <p>Capital Edge is an educational institution providing stock market knowledge and conceptual
+                      training. We are not SEBI-registered as an investment advisor or research analyst. Our programs
+                      are
+                      designed for educational purposes only, to help learners understand market mechanics and develop
+                      disciplined approaches.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Do you provide stock tips or trading calls?</h3>
+                  <div class="faq-content">
+                    <p>No, we do not provide stock tips, trading calls, or any buy/sell/hold recommendations. Our focus
+                      is
+                      strictly on teaching general trading principles, risk management, and market concepts for
+                      educational purposes, in full compliance with SEBI guidelines.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Who should take this course?</h3>
+                  <div class="faq-content">
+                    <p>Our courses are designed for beginners and intermediate learners who want to understand stock
+                      market concepts, trading principles, and risk management techniques. They are ideal for anyone
+                      seeking to build foundational knowledge of trading.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Can I expect profits after this course?</h3>
+                  <div class="faq-content">
+                    <p>Our courses are purely educational and aim to teach trading concepts. We do not guarantee profits
+                      or financial success, as trading involves significant risks and outcomes depend on individual
+                      decisions, market conditions, and risk management. Always consult a SEBI-registered advisor for
+                      investment decisions.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>What is the difference between education and investment advice?</h3>
+                  <div class="faq-content">
+                    <p>Education involves teaching general concepts, principles, and strategies about the stock market,
+                      which we provide. Investment advice involves recommending specific stocks or actions, which we do
+                      not offer. For personalized advice, consult a SEBI-registered advisor.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Do I need prior trading knowledge to join?</h3>
+                  <div class="faq-content">
+                    <p>No prior trading knowledge is required. Our courses are designed for beginners and include
+                      foundational lessons to help you understand stock market concepts from scratch.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>How do I practice what I learn?</h3>
+                  <div class="faq-content">
+                    <p>We recommend practicing concepts using paper trading or demo accounts offered by SEBI-registered
+                      brokers. These allow you to simulate trading without financial risk, helping you apply what you've
+                      learned in a safe environment.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>What is your refund policy?</h3>
+                  <div class="faq-content">
+                    <p>Please note that all course purchases are final and non-refundable. Since our courses provide
+                      immediate access to digital educational content, we do not offer refunds once a purchase is
+                      completed. We recommend reviewing the course details carefully before enrolling. For any questions
+                      prior to purchase, feel free to contact us at capitaledge@example.com.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+              </div>
+
+            </div><!-- End Faq Column-->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Faq Section -->
+      <section class="idea-section">
+        <div class="container">
+          <div class="idea-box">
+            <div class="text-start text-white">
+              <h2>Get Our Ideas</h2>
+              <p>Directly Into Your Inbox Everyday</p>
+              <a href="https://t.me/capital_edge" class="btn btn-light fw-bold">Join Us On Telegram</a>
+            </div>
+            <div>
+              <img src="assets/img/contact.png" alt="Mobile">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learn-section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+          <div class="learn-header">
+            <a href="#" class="meet-team-btn">
+              <i style="margin-right: 5px;" class="fas fa-bolt"></i>
+              Your Trading Edge
+            </a>
+            <h1>What you'll learn<br>at a glance</h1>
+          </div>
+
+          <div class="row" style="display: flex; flex-wrap: wrap; margin: -15px;">
+            <!-- Card 1 -->
+            <div class="col-md-4" style="padding: 15px;">
+              <div class="learn-card">
+                <div class="learn-card-icon"><i class="fas fa-list-ul"></i></div>
+                <h3>A Trading Methodology</h3>
+                <p>Not just a copy-paste strategy, but a full-fledged method.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4" style="padding: 15px;">
+              <div class="learn-card">
+                <div class="learn-card-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Trade Like Professionals</h3>
+                <p>Learn to trade with the same tools and mindset as Pro traders.</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4" style="padding: 15px;">
+              <div class="learn-card">
+                <div class="learn-card-icon"><i class="fas fa-check-square"></i></div>
+                <h3>Verified Traders only</h3>
+                <p>Learn from real, verified, professional traders—not social media gurus.</p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4" style="padding: 15px;">
+              <div class="learn-card">
+                <div class="learn-card-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Transparency</h3>
+                <p>Full transparency, zero hype, zero fluff. Brutally realistic.</p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4" style="padding: 15px;">
+              <div class="learn-card">
+                <div class="learn-card-icon"><i class="fas fa-trophy"></i></div>
+                <h3>Clear Blueprints</h3>
+                <p>Clear rules, setups and blueprints for a replicable system.</p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4" style="padding: 15px;">
+              <div class="learn-card">
+                <div class="learn-card-icon"><i class="fas fa-comments"></i></div>
+                <h3>Interact Live</h3>
+                <p>Ask questions and watch live your World Class mentors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="trader-banner">
+          <div class="banner-content">
+
+            <div class="banner-tag"><i style="margin-right: 5px;" class="fa-solid fa-bullseye"></i>Our Goal With You at
+              Capital Edge</div>
+
+            <h1 class="banner-title">
+              Become a <span class="highlight">knowledgeable and disciplined</span> market participant within<br>your
+              first year.
+            </h1>
+
+            <div class="banner-cta">
+              <a href="#" class="btn-main">Get a FREE Workshop <i class="fas fa-arrow-right"></i></a>
+              <a href="#" class="btn-outline">Free Strategy Call <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </section>
+      </section>
+
+      <section class="section section-dark" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <div class="section-tag">Book a Strategy Call</div>
+            <h2>Build your personal wealth roadmap</h2>
+            <p class="section-lead">
+              Our team will understand your current goals, identify the right pathway, and guide you toward the best-fit
+              program.
+            </p>
+
+            <div class="contact-points">
+              <div><i class="fa-solid fa-phone-volume"></i> Fast callback support</div>
+              <div><i class="fa-solid fa-user-shield"></i> Private and confidential discussion</div>
+              <div><i class="fa-solid fa-calendar-check"></i> Limited slots every week</div>
+            </div>
+          </div>
+          <a href="https://wa.me/917486068173" target="_blank" class="whatsapp-float">
+            <i class="fa-brands fa-whatsapp"></i> </a>
+
+          <div class="form-shell">
+            <form class="lead-form" id="leadForm" action="#" method="post">
+              <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+              </div>
+              <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+              </div>
+              <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">
+                <i class="fa-solid fa-calendar-check"></i>
+                Request Callback
+              </button>
+              <p class="form-note">We respect your privacy. No spam, only strategy.</p>
+            </form>
+          </div>
+        </div>
+      </section><br><br>
+
+      <section class="final-cta">
+        <div class="container final-cta-card">
+          <div>
+            <div class="section-tag">Start Today</div>
+            <h2>Take the definitive step toward financial independence</h2>
+            <p>
+              Join a performance-driven institution built around execution, clarity, and wealth creation.
+            </p>
+          </div>
+          <div class="hero-actions final-actions">
+            <a href="#apply" class="btn btn-primary">
+              <i class="fa-solid fa-arrow-right"></i>
+              Apply Now
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Download Prospectus
+            </a>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand footer-brand">
+          <img class="brand-mark" src="/assets/img/logo.png" alt="Capital Edge logo" />
+        </a>
+        <p class="footer-copy">
+          Finance | Business | Wealth Creation — Institutional mindset, real results.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#elite">Elite Cohort</a>
+          <a href="#testimonial-section">Success Stories</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Connect</h3>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Capital Edge School of Business. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS (ADDED) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // Form submission handler (KEPT ORIGINAL)
+    document.getElementById('leadForm')?.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+
+      if (name && email && phone) {
+        alert(`Thank you ${name}! Our strategy team will reach out within 24 hours.`);
+        this.reset();
+      } else {
+        alert('Please fill all fields to book your strategy call.');
+      }
+    });
+  </script>
+
+  <script>
+    // Progress line and step activation (KEPT ORIGINAL)
+    const progressLine = document.getElementById('progressLine');
+    const steps = document.querySelectorAll('.step');
+    const learningPathSection = document.querySelector('.learning-path');
+
+    function updateProgress() {
+      if (!learningPathSection) return;
+      const rect = learningPathSection.getBoundingClientRect();
+
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        const scrollTop = window.scrollY;
+        const sectionTop = learningPathSection.offsetTop;
+        const sectionHeight = learningPathSection.offsetHeight;
+        const windowHeight = window.innerHeight;
+
+        const sectionScrollStart = sectionTop - windowHeight * 0.2;
+        const sectionScrollEnd = sectionTop + sectionHeight - windowHeight * 0.8;
+        const totalScrollableDistance = sectionScrollEnd - sectionScrollStart;
+
+        if (scrollTop >= sectionScrollStart && scrollTop <= sectionScrollEnd) {
+          const scrollProgress = Math.min(1, Math.max(0, (scrollTop - sectionScrollStart) / totalScrollableDistance));
+          progressLine.style.height = `${scrollProgress * 100}%`;
+        } else if (scrollTop < sectionScrollStart) {
+          progressLine.style.height = '0%';
+        } else if (scrollTop > sectionScrollEnd) {
+          progressLine.style.height = '100%';
+        }
+
+        steps.forEach(step => {
+          const stepRect = step.getBoundingClientRect();
+          const stepTop = stepRect.top + window.scrollY;
+          const stepTriggerPoint = window.scrollY + windowHeight * 0.7;
+          if (stepTop < stepTriggerPoint) {
+            step.classList.add('active');
+          } else {
+            step.classList.remove('active');
+          }
+        });
+      } else {
+        steps.forEach(step => step.classList.remove('active'));
+        if (window.scrollY < learningPathSection.offsetTop) {
+          progressLine.style.height = '0%';
+        }
+      }
+    }
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateProgress();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    window.addEventListener('resize', updateProgress);
+    window.addEventListener('load', updateProgress);
+
+    // FAQ toggle functionality (IMPROVED & FIXED)
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const header = item.querySelector('h3');
+      const toggleIcon = item.querySelector('.faq-toggle');
+
+      // Set initial state
+      if (item.classList.contains('faq-active')) {
+        const content = item.querySelector('.faq-content');
+        if (content) content.style.display = 'block';
+        if (toggleIcon) toggleIcon.style.transform = 'rotate(90deg)';
+      } else {
+        const content = item.querySelector('.faq-content');
+        if (content) content.style.display = 'none';
+        if (toggleIcon) toggleIcon.style.transform = 'rotate(0deg)';
+      }
+
+      header?.addEventListener('click', () => {
+        const wasActive = item.classList.contains('faq-active');
+
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('faq-active');
+          const content = i.querySelector('.faq-content');
+          const icon = i.querySelector('.faq-toggle');
+          if (content) content.style.display = 'none';
+          if (icon) icon.style.transform = 'rotate(0deg)';
+        });
+
+        // Open clicked if it wasn't active
+        if (!wasActive) {
+          item.classList.add('faq-active');
+          const content = item.querySelector('.faq-content');
+          const icon = item.querySelector('.faq-toggle');
+          if (content) content.style.display = 'block';
+          if (icon) icon.style.transform = 'rotate(90deg)';
+        }
+      });
+    });
+
+    // Testimonial Slider Initialization (ADDED)
+    const testimonialSwiper = new Swiper('.testimonial-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 2,
+        },
+      },
+      spaceBetween: 20,
+    });
+  </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
+    integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+    data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
