@@ -267,10 +267,7 @@
           </p>
 
           <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-            <a href="#apply" class="btn btn-primary">
-              <i class="fa-solid fa-arrow-right"></i>
-              Apply Now
-            </a>
+
             <a href="#programs" class="btn btn-outline">
               <i class="fa-solid fa-layer-group"></i>
               Explore Programs
@@ -278,13 +275,13 @@
           </div>
 
           <div class="hero-pills" data-aos="fade-up" data-aos-delay="500">
-            <span><i class="fa-solid fa-users"></i> 1000+ Participants</span>
+            <span><i class="fa-solid fa-users"></i> 100+ Participants</span>
             <span><i class="fa-solid fa-building-columns"></i> Institutional Strategies</span>
-            <span><i class="fa-solid fa-chalkboard-user"></i> Real Market Training</span>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Capital Edge visual presentation" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+        <div class="hero-visual" aria-label="Capital Edge visual presentation" data-aos="fade-left"
+          data-aos-duration="1200" data-aos-delay="200">
           <div class="visual-card main-visual-card" data-aos="zoom-in-up" data-aos-delay="250">
             <div class="visual-topbar">
               <span></span><span></span><span></span>
@@ -1099,7 +1096,8 @@
         <section class="trader-banner" data-aos="fade-up" data-aos-duration="1200">
           <div class="banner-content">
 
-            <div class="banner-tag" data-aos="zoom-in" data-aos-delay="100"><i style="margin-right: 5px;" class="fa-solid fa-bullseye"></i>Our Goal With You at
+            <div class="banner-tag" data-aos="zoom-in" data-aos-delay="100"><i style="margin-right: 5px;"
+                class="fa-solid fa-bullseye"></i>Our Goal With You at
               Capital Edge</div>
 
             <h1 class="banner-title" data-aos="fade-up" data-aos-delay="200">
@@ -1132,8 +1130,7 @@
               <div><i class="fa-solid fa-calendar-check"></i> Limited slots every week</div>
             </div>
           </div>
-          <a href="https://wa.me/917486068173" target="_blank" class="whatsapp-float" data-aos="zoom-in" data-aos-delay="400">
-            <i class="fa-brands fa-whatsapp"></i> </a>
+
 
           <div class="form-shell" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
             <form class="lead-form" id="leadForm" action="#" method="post">
@@ -1215,10 +1212,12 @@
       </div>
     </div>
 
-    <div class="container footer-bottom" data-aos="fade-up" data-aos-delay="400">
+    <div class="container footer-bottom">
       <p>© 2026 Capital Edge School of Business. All Rights Reserved.</p>
     </div>
   </footer>
+  <a href="https://wa.me/917486068173" target="_blank" class="whatsapp-float">
+    <i class="fa-brands fa-whatsapp"></i> </a>
 
   <!-- Swiper JS (ADDED) -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -1262,11 +1261,11 @@
 
         if (scrollTop >= sectionScrollStart && scrollTop <= sectionScrollEnd) {
           const scrollProgress = Math.min(1, Math.max(0, (scrollTop - sectionScrollStart) / totalScrollableDistance));
-          progressLine.style.height = `${scrollProgress * 100}%`;
+          progressLine.style.height = `${scrollProgress * 60}%`; // max 60% height
         } else if (scrollTop < sectionScrollStart) {
           progressLine.style.height = '0%';
         } else if (scrollTop > sectionScrollEnd) {
-          progressLine.style.height = '100%';
+          progressLine.style.height = '60%';
         }
 
         steps.forEach(step => {
