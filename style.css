@@ -2282,24 +2282,26 @@ p {
 .learning-path::before {
   content: '';
   position: absolute;
-  top: 20%;
+  top: 10%;
+  /* same as progress */
   bottom: 0;
   left: 50%;
   width: 4px;
-  background: linear-gradient(to bottom, var(--color-border), var(--color-border));
+  background: var(--color-border);
   transform: translateX(-50%);
   z-index: 1;
 }
 
 .path-progress {
   position: absolute;
-  top: 0%;
+  top: 10%;
+  bottom: 30%;
+  /* increase this to reduce height */
   left: 50%;
   width: 4px;
   background: var(--color-gold);
   transform: translateX(-50%);
   z-index: 2;
-  transition: height 0.3s ease;
   border-radius: 2px;
 }
 
@@ -2879,7 +2881,8 @@ p {
     margin-bottom: 20px;
   }
 }
-.idea-section{
+
+.idea-section {
   margin-top: 30px;
   margin-bottom: -50px;
 }
