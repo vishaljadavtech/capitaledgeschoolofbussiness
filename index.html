@@ -853,7 +853,7 @@
 
             <div class="founder-signoff">
               <strong>Jaivik Rathod</strong>
-              <span>Founder &amp; CIO</span>
+              <span>Founder &amp; CEO</span>
             </div>
           </div>
 
@@ -1298,18 +1298,14 @@
     }
 
     let ticking = false;
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, {
-      threshold: 0.3
-    });
-
-    document.querySelectorAll('.step').forEach(step => {
-      observer.observe(step);
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateProgress();
+          ticking = false;
+        });
+        ticking = true;
+      }
     });
 
     window.addEventListener('resize', updateProgress);
@@ -1357,7 +1353,10 @@
     // Testimonial Slider Initialization (ADDED)
     const testimonialSwiper = new Swiper('.testimonial-swiper', {
       loop: true,
-      autoplay: false,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -1385,7 +1384,7 @@
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 200,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
       mirror: false,
