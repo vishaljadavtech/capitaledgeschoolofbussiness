@@ -510,7 +510,7 @@
           <!-- Subtitle -->
           <p class="subtitle" data-aos="fade-up" data-aos-delay="300">
             Education, live sessions, trading psychology, market analysis and Execution Intelligence
- action, all at Capital Edge
+            action, all at Capital Edge
           </p>
         </div>
       </div>
@@ -648,7 +648,7 @@
               <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
               <h3>Elite Programs</h3>
               <p>Unlock mentorship, Execution Intelligence
- reviews, and premium access designed for serious builders.</p>
+                reviews, and premium access designed for serious builders.</p>
             </article>
           </div>
         </div>
@@ -740,7 +740,7 @@
                 <div class="testimonial-slide">
                   <i class="fa-solid fa-quote-left"></i>
                   <p>"The Execution Intelligence
- sessions and journaling drills transformed my risk management. I've finally found
+                    sessions and journaling drills transformed my risk management. I've finally found
                     a trading community that cares about real growth."</p>
                   <div class="testimonial-author">
                     <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Kunal Verma">
@@ -807,7 +807,7 @@
             <article class="card-elevated card-elevated-dark" data-aos="fade-up" data-aos-delay="200">
               <div class="card-icon"><i class="fa-solid fa-tv"></i></div>
               <h3>Execution Intelligence
- </h3>
+              </h3>
               <p>Trade review systems, execution frameworks, and market behavior analysis.</p>
             </article>
             <article class="card-elevated card-elevated-dark" data-aos="fade-up" data-aos-delay="300">
@@ -833,34 +833,30 @@
 
       <section class="section section-light founder-section" data-aos="fade-up" data-aos-duration="1000">
         <div class="container founder-card" data-aos="zoom-in-up">
-      
+
           <div class="founder-visual" data-aos="fade-right" data-aos-delay="100">
             <div class="founder-image-wrapper">
-              <img 
-                src="assets/img/about/mentor.png" 
-                alt="Jaivik Rathod - Founder & CIO"
-                class="founder-image"
-              />
+              <img src="assets/img/about/mentor.png" alt="Jaivik Rathod - Founder & CEO" class="founder-image" />
             </div>
           </div>
-      
+
           <div class="founder-copy" data-aos="fade-left" data-aos-delay="200">
             <div class="section-tag">Founder's Vision</div>
-      
+
             <h2>We don't just teach trading. We build wealth creators.</h2>
-      
+
             <p>
               Capital Edge was built with one mission — to transform individuals into
               financially independent thinkers. Every program is designed to sharpen
               judgment, improve execution, and cultivate a long-term wealth mindset.
             </p>
-      
+
             <div class="founder-signoff">
               <strong>Jaivik Rathod</strong>
               <span>Founder &amp; CIO</span>
             </div>
           </div>
-      
+
         </div>
       </section>
 
@@ -1115,7 +1111,8 @@
               Capital Edge</div>
 
             <h1 class="banner-title" data-aos="fade-up" data-aos-delay="200">
-              Develop the <span class="highlight">knowledge, discipline, and execution</span> skills to become a confident market participant <br>within your first year.
+              Develop the <span class="highlight">knowledge, discipline, and execution</span> skills to become a
+              confident market participant <br>within your first year.
             </h1>
 
             <div class="banner-cta" data-aos="fade-up" data-aos-delay="300">
@@ -1219,7 +1216,8 @@
         <div class="social-links">
           <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://www.instagram.com/capitaledge.school" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/capitaledge.school" aria-label="Instagram"><i
+              class="fab fa-instagram"></i></a>
           <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
@@ -1300,14 +1298,18 @@
     }
 
     let ticking = false;
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          updateProgress();
-          ticking = false;
-        });
-        ticking = true;
-      }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    document.querySelectorAll('.step').forEach(step => {
+      observer.observe(step);
     });
 
     window.addEventListener('resize', updateProgress);
@@ -1355,10 +1357,7 @@
     // Testimonial Slider Initialization (ADDED)
     const testimonialSwiper = new Swiper('.testimonial-swiper', {
       loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
+      autoplay: false,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -1387,10 +1386,8 @@
   <script>
     AOS.init({
       duration: 500,
-      easing: 'ease-in-out',
       once: true,
-      mirror: false,
-      offset: 80
+      disable: window.innerWidth < 768
     });
   </script>
 
