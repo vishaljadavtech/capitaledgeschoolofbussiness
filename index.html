@@ -1385,9 +1385,11 @@
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 500,
+      duration: 200,
+      easing: 'ease-in-out',
       once: true,
-      disable: window.innerWidth < 768
+      mirror: false,
+      offset: 80
     });
   </script>
 
