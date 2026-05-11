@@ -34,6 +34,62 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Add at the very top of your CSS */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Fix containers that might overflow */
+.container,
+.container1,
+.hero-grid,
+.cards-grid,
+.program-grid {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+/* Fix specific elements causing overflow */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-md-4,
+.col-lg-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+/* Fix images that might overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix mentor section on mobile */
+@media (max-width: 768px) {
+  .mentor-card .row {
+    flex-direction: column;
+  }
+
+  .hero-visual {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .floating-card {
+    max-width: 90%;
+  }
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: var(--color-text);
@@ -456,6 +512,75 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+@media (max-width: 992px) {
+  .main-visual-card {
+    inset: 20px;
+  }
+
+  .dashboard-illustration {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-side-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .floating-card-top {
+    left: 10px;
+  }
+
+  .floating-card-bottom {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-visual {
+    min-height: auto;
+  }
+
+  .main-visual-card {
+    position: relative;
+    inset: unset;
+    width: 100%;
+  }
+
+  .dashboard-chart {
+    min-height: 260px;
+  }
+
+  .dashboard-side-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-card {
+    width: 100%;
+    position: relative;
+  }
+
+  .floating-card-top,
+  .floating-card-bottom {
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+    margin-top: 16px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .dashboard-chart {
+    min-height: 220px;
+  }
+
+  .main-visual-card {
+    padding: 16px;
+  }
+}
+
 .mini-stat small {
   display: block;
   color: var(--color-text-muted);
@@ -469,6 +594,10 @@ p {
   color: #ffffff;
 }
 
+.section-tag {
+  text-align: center !important;
+}
+
 .floating-card {
   position: absolute;
   display: flex;
@@ -476,6 +605,7 @@ p {
   align-items: flex-start;
   width: min(290px, 90%);
   padding: 18px 18px;
+  margin-top: 50px !important;
   border-radius: 24px;
   background: rgba(10, 14, 26, 0.84);
   border: 1px solid rgba(212, 175, 55, 0.22);
@@ -506,7 +636,7 @@ p {
 
 .floating-card-bottom {
   right: 0;
-  bottom: 34px;
+  margin-top: -10px !important;
 }
 
 .stats-strip {
