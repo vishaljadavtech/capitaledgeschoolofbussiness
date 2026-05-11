@@ -42,54 +42,6 @@ body {
   position: relative;
 }
 
-/* Fix containers that might overflow */
-.container,
-.container1,
-.hero-grid,
-.cards-grid,
-.program-grid {
-  max-width: 100%;
-  overflow-x: hidden;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-}
-
-/* Fix specific elements causing overflow */
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.col-md-4,
-.col-lg-4 {
-  padding-left: 15px;
-  padding-right: 15px;
-  box-sizing: border-box;
-}
-
-/* Fix images that might overflow */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Fix mentor section on mobile */
-@media (max-width: 768px) {
-  .mentor-card .row {
-    flex-direction: column;
-  }
-
-  .hero-visual {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  .floating-card {
-    max-width: 90%;
-  }
-}
-
 body {
   font-family: 'Inter', sans-serif;
   color: var(--color-text);
