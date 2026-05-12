@@ -177,6 +177,13 @@
       z-index: 999;
     }
 
+    .arrow-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+    }
+
     /* AOS smoothness */
     [data-aos] {
       will-change: transform, opacity;
@@ -1234,6 +1241,10 @@
   </footer>
   <a href="https://wa.me/917486068173" target="_blank" class="whatsapp-float">
     <i class="fa-brands fa-whatsapp"></i> </a>
+
+    <a href="#" class="arrow-float" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+      <i class="fa-solid fa-arrow-up"></i>
+  </a>
 
   <!-- Swiper JS (ADDED) -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
